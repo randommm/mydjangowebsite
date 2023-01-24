@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mydjangowebsite-production
+spec:
+  type: ClusterIP
+  selector:
+    app: mydjangowebsite-production
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80

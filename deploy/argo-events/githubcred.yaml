@@ -1,0 +1,16 @@
+# kubectl create secret generic mydjangowebsite-github-access --from-literal token=x -n argo-events --dry-run=client --output yaml | kubeseal --format=yaml
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: mydjangowebsite-github-access
+  namespace: argo-events
+spec:
+  encryptedData:
+    token: AgAt0il27xxBcoGtkj5/vAFv5wliXAvFid/A0u7Fzezmj90QHWT+gUxXxD/5k8zpobwisHH1yyeeZp2YcChWbK9rOG4QLA+Y+8qZynfZKIKmP8awikWoMxD7YL75msoJDVM1mni8W+sEZaDFnRZH1BDIIUE2t1q/3U4JIJaNNNhSVyv/161x9Fdza+qbubpSrJ1b/WLthGbLDH+0UF7lGJc672IWqKc8n8xYnjEg9shpgS5TZzQDK9ufS+oJbvKkB7DPAejUPZ2ADUCRjWRQGlRusaiJ5krQXOYkWqkHSoXEEcWtc/AiV8wmrfafipKyi7cXRR65gTHBYPWhb4XdzKCyeyVX9nQLXHMeB2M+d7YFYho1PoF4HXMnFmJacyg5NVvaQm+DvNAOy1kFnQp+DVO2wRVqWziE5up4Rp9ecMcUwkzaWIaNRn7PfrbiTYqE3sYNh3LVhME980LiSr0sg3thucutepg0iQexay6Fo2H6ncCuTrNvm5AhlGrW8zWyv8vnPTRry2RrdvZr0+kn3uaM2eYrLFSrXmuPgOZIHWzoqsYkHz5JzO3oJMdGodv40WYgtHYFwDTseWnzN3I0ORlOkhyGAF6P1G8H+0BvSnvb17/ucAyZmyFOQsQmQV+84nGl6yiB84xLCFPaPiDHL08vOdCcbvzDJz7o1z7yJNFKu3PWDDVm7XDIZOaK2db+sdNzMijat4VKa/zmkydYbG6+Rc1A6Dp4JUlANjzWTnHwtX90oBJJGJrpQ2esd4a2mtFbuBcMN1pRQFY+VsexkU8M
+  template:
+    metadata:
+      creationTimestamp: null
+      name: mydjangowebsite-github-access
+      namespace: argo-events
+
