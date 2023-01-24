@@ -7,4 +7,4 @@ resources:
 namespace: production
 images:
   - name: marcoinacio/mydjangowebsite
-    newTag: "placeholder"
+    newTag: "a897d09c02f6701f6e2429871d84d0180590e545"
